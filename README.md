@@ -30,16 +30,16 @@ i.e. `codecept <options>` is a shorthand for `php codecept.phar <options>`.
 ###Examples
 `codecept --acceptance UserLoginCest`
 
-Executes the acceptance tests in `UserLoginCest.php`.
+Executes the **acceptance** tests in `UserLoginCest.php`.
 
 `codecept --functional-html`
 
-Executes all the functional tests with HTML reporting and code coverage.
+Executes all the **functional** tests with HTML reporting and code coverage.
 
 `codecept --unit-group Slow`
 
-Executes all the unit tests in the `Slow` group.
+Executes all the **unit** tests in the `Slow` group.
 
 `codecept --all-group-html Slow`
 
-Executes all the tests in the `Slow` group in all suites with HTML reporting and code coverage.
+Executes all the tests in the `Slow` group in **all suites** with HTML reporting and code coverage.
