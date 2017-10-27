@@ -5,7 +5,7 @@ This Windows batch file gives you some convenient shorthand options to Codecepti
 Place the `codecept.cmd` file in the same directory as `codecept.phar` and make sure that
 both that directory and PHP are available in the current Windows `%PATH%` environment variable.
 
-The options are to run the `codecept` batch file are:
+The options to run the `codecept` batch file are:
 
 `codecept --<type>[-group][-html] [<name>]`  
 or  
@@ -25,7 +25,8 @@ the optional `<name>`, if included, must be a suite name such as `unit`, `accept
 The shorthand options only accept one name after the option is specified.
 You can run any normal Codeception command with any number of options
 if you don't use any of the shorthand options defined above,
-i.e. `codecept <options>` is a shorthand for `php codecept.phar <options>`.
+i.e. `codecept [<option-1>] [<option-2>] ... [<option-n>]`
+is a shorthand for `php codecept.phar [<option-1>] [<option-2>] ... [<option-n>]`.
 
 ###Examples
 `codecept --acceptance UserLoginCest`
