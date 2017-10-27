@@ -29,6 +29,7 @@ i.e. `codecept [<option-1>] [<option-2>] ... [<option-n>]`
 is a shorthand for `php codecept.phar [<option-1>] [<option-2>] ... [<option-n>]`.
 
 ###Examples
+
 `codecept --acceptance UserLoginCest`
 
 Executes the **acceptance** tests in `UserLoginCest.php`.
