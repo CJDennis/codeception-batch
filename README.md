@@ -7,7 +7,7 @@ both that directory and PHP are available in the current Windows `%PATH%` enviro
 
 The options to run the `codecept` batch file are:
 
-`codecept --<type>[-group][-html] [<name>]`  
+`codecept --<type>[-group][-{ht|x|xht}ml] [<name>]`  
 or  
 `codecept [<option-1>] [<option-2>] ... [<option-n>]`
 
@@ -15,7 +15,13 @@ where:
 - `<type>` is one of `acceptance`, `functional`, `unit`, or `all`
 - `-group` means run the named group, otherwise run the named individual test, if `<name>` is supplied
 - `-html` means output both an HTML report at `_output/report.html`
-and code coverage reports in `_output/coverage/` (the defaults)
+and HTML code coverage reports in `_output/coverage/` (the defaults)
+- `-xml` means output both an XML report at `_output/report.xml`
+and a single XML code coverage report at `_output/coverage.xml` (the defaults)
+- `-xhtml` means output an HTML report at `_output/report.html`,
+HTML code coverage reports in `_output/coverage/` (the defaults),
+an XML report at `_output/report.xml`
+and a single XML code coverage report at `_output/coverage.xml` (the defaults)
 - `<name>` is the name of the individual test to run, or the name of the group if `-group` is also supplied
 
 The options `--all` and `--all-group` are not any more useful than running `php codecept.phar [--group]`
